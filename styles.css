@@ -1,0 +1,122 @@
+* {
+    font-family: Nunito, sans-serif;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: 10vh auto auto 20vh
+}
+.header {
+    background-color: black;
+    color: white;
+    grid-column: 1/11;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.header > a {
+    color: cyan;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar > a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    padding-right: 10px;
+}
+.navbar > a:hover {
+    color: magenta;
+}
+.hero {
+    grid-column: 1 / 11;
+    grid-row: 2 / 3;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(9, 10vh);
+}
+.hero-body {
+    grid-column: 3 / 9;
+    grid-row: 3 / 5;
+    display: inline-block;
+}
+.hero-body > h1 {
+    grid-column: 3 /7;
+    grid-row: 3 / 4;
+    color: cyan;
+}
+.content {
+    grid-column: 2 / 10;
+    display: inline-block;
+    padding: 10px;
+    background-color: aliceblue;
+}
+.skill-list {
+    list-style-type: none;
+    
+}
+.skill-list > li {
+    display: inline-block;
+    background-color: cyan;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px 5px;
+    text-align: center;
+    margin: 5px;
+}
+.work-card{
+    border: 2px solid black;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.portfolio-card {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-card > a {
+    color: white;
+    text-decoration: none;
+    background-color: magenta;
+    border-radius: 5px;
+    padding: 5px 5px;
+    text-align: center;
+    border: 2px solid black;
+    width: 80px;
+}
+.project-image{
+    width: 100%;
+}
+
+footer {
+    grid-row: 4 / 5;
+    grid-column: 1 / 11;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+footer > ul {
+    list-style-type: none;
+}
+footer > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+

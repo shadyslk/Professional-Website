@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Kortheuer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <a href="/index.html">LK</a>
+        <div class="navbar">
+            <a href="/about.html">About</a>
+            <a href="/portfolio.html">Portfolio</a>       
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Professional Website</h1>
+        <img src="/images/profesional-site.png" alt="Screenshot of VS Code session" class="project-image">
+        <h2>Vision</h2>
+        <p>The idea of this project came from the desire to showcase the projects that I have been working on. What I wanted is something simple to have as a starting point and that would be easy modify moving forward as I gain new skills.</p>
+        <h2>Technologies Used</h2>
+        <ul class="skill-list">
+            <li>Amazon S3</li>
+            <li>Amazon Route 53</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+        <h2>Process</h2>
+        <p>I began by assessing architecture and making initial decisions. I decided to use Amazon S3's capability to host static websites. It was the best choice for my situation as it would allow me to spend less time on upkeep and it would be more cost-efficient for a starting website as I would only pay for what is actually being used.</p>
+        <p>Next, I started working on the draft of the website itself locally on my computer. I created the webpages for the three main pages: Index, About, and Portfolio. I spent plenty of time working on getting the layout and styles to fit my vision. I wanted a site that was simply styled and that had plenty of room for modifications and upgrades later down the line. I will make my code available on my github for anyone that is interested in using any of the code that I have written.</p>
+        <p>After creating the initial pages for my site, I began to work with setting up an S3 Bucket for my website to be hosted. Amazon Web Services makes this a very easy process. I was able to upload my files to this bucket and apply the configurations that I needed to host the website.</p>
+        <p>In order to make my website more easily reachable, I used Amazon Route 53 to purchase a domain name that I could use for my projects. I was able to purchase the domain name that I felt worked best for me and create a DNS record to link to my Amazon S3 hosted website. This would allow users to use an easier to remember domain name intead of the full bucket URL.</p>
+        <p>Finally, I was able to finish up some key details of my website. I spent time working on the content for the site. Amazon S3 made it very easy to upload my updated files and folder structure.</p>
+
+        <p></p>
+        <p></p>
+        <h2>Conclusions</h2>
+        <p>I have many additions and plans that I will have for the website: I am hoping to get an SSL/TLS certificate for my website to increase the overall security of data transmitted between server and client. I am also hoping to incorporate Amazon Cloudfront in the near future to improve latency in other geographical locations. That is what I have planned for the near future.</p>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://github.com/shadyslk">Github</a></li>
+            <li><a href="https://youtu.be/sCQwEVhCvTg?si=YNn-f307o0MYHqx9">Hosting a Static Website on Amazon S3 - Tech with Lucy</a></li>
+            <li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html">AWS Docs - Amazon S3 Static Website</a></li>
+            
+        </ul>
+    </div>
+    
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/lucas-kortheuer-51236497">LinkedIn</a></li>
+            <li><a href="https://github.com/shadyslk">GitHub</a></li>
+            <li><a href="mailto:slkortheuer@gmail.com">Email</a></li>
+        </ul>
+        <p>Lucas Kortheuer, 2024</p>
+    </footer>
