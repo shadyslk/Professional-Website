@@ -23,27 +23,33 @@
         <h1>Professional Website</h1>
         <img src="/images/profesional-site.png" alt="Screenshot of VS Code session" class="project-image">
         <h2>Vision</h2>
-        <p>The idea of this project came from the desire to showcase the projects that I have been working on. What I wanted is something simple to have as a starting point and that would be easy modify moving forward as I gain new skills.</p>
+        <p>The idea for this website came from wanting to take the knowledge of the technologies that I've learned and showcase them. I wanted to build a website that I could use to present the projects that I have created.</p>
         <h2>Technologies Used</h2>
         <ul class="skill-list">
             <li>Amazon S3</li>
             <li>Amazon Route 53</li>
+            <li>Amazon CloudFront</li>
+            <li>Amazon Certificate Manager</li>
             <li>HTML</li>
             <li>CSS</li>
         </ul>
         <h2>Process</h2>
-        <p>I began by assessing architecture and making initial decisions. I decided to use Amazon S3's capability to host static websites. It was the best choice for my situation as it would allow me to spend less time on upkeep and it would be more cost-efficient for a starting website as I would only pay for what is actually being used.</p>
-        <p>Next, I started working on the draft of the website itself locally on my computer. I created the webpages for the three main pages: Index, About, and Portfolio. I spent plenty of time working on getting the layout and styles to fit my vision. I wanted a site that was simply styled and that had plenty of room for modifications and upgrades later down the line. I will make my code available on my github for anyone that is interested in using any of the code that I have written.</p>
-        <p>After creating the initial pages for my site, I began to work with setting up an S3 Bucket for my website to be hosted. Amazon Web Services makes this a very easy process. I was able to upload my files to this bucket and apply the configurations that I needed to host the website.</p>
-        <p>In order to make my website more easily reachable, I used Amazon Route 53 to purchase a domain name that I could use for my projects. I was able to purchase the domain name that I felt worked best for me and create a DNS record to link to my Amazon S3 hosted website. This would allow users to use an easier to remember domain name intead of the full bucket URL.</p>
-        <p>Finally, I was able to finish up some key details of my website. I spent time working on the content for the site. Amazon S3 made it very easy to upload my updated files and folder structure.</p>
-
-        <p></p>
-        <p></p>
+        <h3>Design</h3>
+        <p>The two longest pieces of this project were design and content. Design wise, I had decided early on that I wanted to keep the website simple. I am a huge fan of a variety of designs. There are plenty of great examples of beautiful designs that are very complex and admirable. I have a philosophy of keeping things simple. In web design, this can result in faster load times overall and provides a clear message.</p>
+        <p>CSS and HTML have come a long way over the years and provide a lot of out-of-the-box functionality that helps with my design philosophy. CSS now can handle animations and transitions beautifully. I got the chance to take advantage of these in the creation of the website.</p>
+        <p>Once the overall design was created, it became easier to fill in the content as I had started making my outline in the process. I have learned from experience that it great to start broad and then become more specific as needed.</p>
+        <p>I have linked my GitHub below where my code for this project is linked for reference. It should update regularly as this site will update.</p>
+        <h3>Hosting</h3>
+        <p>We are in an age in web development where there are lots of options for hosting a website. GitHub offers static website hosting as a main example. I could have also gone a slightly more traditional route and spun up a virtual machine to host the website. In the end, I chose Amazon S3 for hosting this static website.</p>
+        <p>The choice of Amazon S3 was one that worked well for my situation. It is cost effective because I don't expect a heavy amount of traffic at this time and S3 will only charge me for what is used. It is also what I am comfortable with as I am an AWS Certified Solutions Architect and integrates well with other technologies I am familiar with.</p>
+        <h3>Security</h3>
+        <p>The final piece I had to establish was ensuring that my website had a TLS certificate to ensure that connections to my website were secure.</p>
+        <p>I had generated my TLS certificate using Amazon Certificate Manager. I also took the time to set up a CloudFront Distribution. This would allow me to attach my TLS Certificate to my static website. It also has the benefit of distributing my website to users more efficiently.</p>
+        <p>Lastly, I simply had to create a new Domain and DNS Entry to point to my CloudFront Distribution. This way, I have a professional looking domain name to share with users.</p>
         <h2>Conclusions</h2>
-        <p>I have many additions and plans that I will have for the website: I am hoping to get an SSL/TLS certificate for my website to increase the overall security of data transmitted between server and client. I am also hoping to incorporate Amazon Cloudfront in the near future to improve latency in other geographical locations. That is what I have planned for the near future.</p>
+        <p>Overall, I have found the process to be very educational in having me practice my craft. I feel this is a great first step to showcasing my talents. I got to create a website using HTML and CSS for design and content. I also worked with Amazon Web Services to host my website and ensure it is secure. I have linked resources below that I found helpful along the way.</p>
         <h2>Links</h2>
-        <ul>
+        <ul class="resource-links">
             <li><a href="https://github.com/shadyslk">Github</a></li>
             <li><a href="https://youtu.be/sCQwEVhCvTg?si=YNn-f307o0MYHqx9">Hosting a Static Website on Amazon S3 - Tech with Lucy</a></li>
             <li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html">AWS Docs - Amazon S3 Static Website</a></li>

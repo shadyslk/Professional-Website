@@ -72,7 +72,7 @@ body {
 .skill-list > li {
     display: inline-block;
     background-color: cyan;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 3px;
     padding: 5px 5px;
     text-align: center;
     margin: 5px;
@@ -108,6 +108,18 @@ body {
 }
 .project-image{
     width: 100%;
+}
+.resource-links {
+    list-style-type: none;
+}
+.resource-links > li > a {
+    text-decoration: none;
+    color: magenta;
+    transition: 0.2s;
+}
+.resource-links > li > a:hover {
+    color:black;
+    transition: 0.5s;
 }
 
 footer {
