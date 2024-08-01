@@ -33,9 +33,11 @@ body {
     text-decoration: none;
     padding: 5px;
     padding-right: 10px;
+    transition: 0.2s;
 }
 .navbar > a:hover {
     color: magenta;
+    transition: 0.5s;
 }
 .hero {
     grid-column: 1 / 11;
@@ -61,6 +63,7 @@ body {
     display: inline-block;
     padding: 10px;
     background-color: aliceblue;
+    min-height: 90vh;
 }
 .skill-list {
     list-style-type: none;
@@ -75,10 +78,10 @@ body {
     margin: 5px;
 }
 .work-card{
-    border: 2px solid black;
+    /* border: 1px solid black; */
     margin: 5px;
     padding: 15px;
-    border-radius: 5px;
+    /* border-radius: 1px; */
 }
 .portfolio-card {
     border: 2px solid black;
@@ -91,12 +94,17 @@ body {
 .portfolio-card > a {
     color: white;
     text-decoration: none;
-    background-color: magenta;
+    background-color: black;
     border-radius: 5px;
     padding: 5px 5px;
     text-align: center;
     border: 2px solid black;
     width: 80px;
+    transition: 0.2s;
+}
+.portfolio-card > a:hover {
+    color: magenta;
+    transition: 0.5s;
 }
 .project-image{
     width: 100%;
