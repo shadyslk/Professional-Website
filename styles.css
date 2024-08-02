@@ -58,6 +58,24 @@ body {
     grid-row: 3 / 4;
     color: cyan;
 }
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.hero-buttons > a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    transition: 0.2s;
+    font-weight: bolder;
+}
+.hero-buttons > a:hover {
+    border: 2px solid magenta;
+    background-color: magenta;
+    transition: 0.5s;
+}
 .content {
     grid-column: 2 / 10;
     display: inline-block;
